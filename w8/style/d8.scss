@@ -40,7 +40,7 @@
 // }
 
 .nav {
-  background-color: rgb(6, 83, 93);
+  background-color: rgb(6, 67, 64);
   color: white;
   font-weight: 100;
   font-size: 21px;
@@ -93,14 +93,16 @@
 }
 
 #hero2 {
-  background-color: rgb(192, 205, 204);
+  background-image: url("img/k.jpg") {
+
+  }
   .wrapper {
     display: flex;
     align-items: center;
     $gap-val: 24px;
-    font-size: 65px;
+    font-size: 50px;
     font-family: "Times New Roman", Times, serif;
-    color: rgb(19, 69, 69);
+    color: rgb(255, 255, 255);
     gap: $gap-val;
     & > * {
       flex: 1;
@@ -114,7 +116,7 @@
       }
     }
     &__media {
-      aspect-ratio: 4 / 3;
+      aspect-ratio: 4 / 1;
     }
   }
   h2 {
@@ -135,8 +137,8 @@
 }
 
 .column {
-  background-color: gray;
-  color: white;
+  background-color: rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
   font-size: 0.875rem;
   container-type: inline-size;
   container-name: footer;
@@ -153,8 +155,8 @@
 }
 
 .column {
-  background-color: rgb(74, 90, 84);
-  color: white;
+  background-color: rgb(255, 255, 255);
+  color: rgb(7, 92, 87);
   font-size: 15px;
   font-family: "Times New Roman", Times, serif;
   container-type: inline-size;
@@ -167,7 +169,7 @@
     list-style: none;
   }
   svg {
-    fill: white;
+    fill: rgb(255, 255, 255);
   }
   .wrapper {
     // display: flex;
