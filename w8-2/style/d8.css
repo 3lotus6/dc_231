@@ -1,0 +1,70 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "나눔스퀘어OTF", sans-serif;
+}
+
+body {
+  height: 100vh;
+  background-color: #000;
+  background-image: url(https://pixabay.com/get/g6da3e8a7cefba9f822aedd9d560b886543e3b9105bb83b6c8103ef09edad6e487538e806fb2584fae22ff80199653fc11c2f7186106dd186757e779f5b248a61_1920.jpg);
+  background-size: cover;
+  background-position: center;
+  -webkit-backdrop-filter: brightness(60%);
+          backdrop-filter: brightness(60%);
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1rem;
+}
+
+a:hover {
+  color: lightpink;
+}
+
+header {
+  position: relative;
+  padding: 0 2rem;
+}
+
+.navbar {
+  width: 100%;
+  height: 60px;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar .logo a {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navbar .links {
+  display: flex;
+  gap: 2rem;
+}
+
+.navbar .menu {
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  display: none;
+}
+
+@media (max-width: 992px) {
+  .navbar .links,
+  .navbar .menu {
+    display: none;
+  }
+}
