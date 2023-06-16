@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <link rel="stylesheet" href="style/w15.css" />
+    <script src="js/week15.js" defer></script>
+    <title>week15</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo">잃어버린 영혼</div>
+      <div class="hamburger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+      <nav class="nav-bar">
+        <ul>
+          <li>
+            <a href="d1/d1.html">Chapter1</a>
+          </li>
+          <li>
+            <a href="d1/d1/d2.html">Chapter2</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="a1" class="animTrigger">
+        <div class="wrapper">
+          <div class="content">
+            <h2 class="animTarget">
+              저자 ㅣ 올가 토카르추크
+            </h2>
+            <h1 class="animTarget">
+              잃어버린 영혼
+            </h1>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script>
+      hamburger =
+        document.querySelector(".hamburger");
+      hamburger.onclick = function () {
+        navBar =
+          document.querySelector(".nav-bar");
+        navBar.classList.toggle("active");
+      };
+    </script>
+  </body>
+</html>

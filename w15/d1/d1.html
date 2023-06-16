@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      http-equiv="X-UA-Compatible"
+      content="IE=edge"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <link rel="stylesheet" href="style/o1.css" />
+    <script src="js/o1.js" defer></script>
+
+    <title>dc231 w12 objective3</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo">잃어버린 영혼</div>
+      <div class="hamburger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+      <nav class="nav-bar">
+        <ul>
+          <li>
+            <a href="d1/d2.html">Chapter2</a>
+          </li>
+
+          <li>
+            <a href="../d15.html">Home</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="s1" class="animTrigger">
+        <div class="wrapper">
+          <div class="content animTarget">
+            <p1>어떤 사람이 있었습니다.</p1>
+            <p1>
+              일을 아주 많이, 빨리 하는
+              사람이었지요.
+            </p1>
+          </div>
+        </div>
+      </section>
+      <section id="s2" class="animTrigger">
+        <div class="wrapper">
+          <div class="content">
+            <p class="animTarget"></p>
+          </div>
+        </div>
+      </section>
+      <section id="s3" class="animTrigger">
+        <div class="wrapper">
+          <div class="content">
+            <p class="animTarget">
+              어느날, 남자는 숨이 막힐 것만
+              같았습니다.
+            </p>
+            <h2 class="animTarget">
+              이곳에 무슨 일로,
+            </h2>
+            <p class="animTarget">
+              어떻게 온 건지도 기억나지 않습니다.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="s4" class="animTrigger">
+        <div class="wrapper">
+          <div class="content">
+            <h2 class="animTarget">맙소사!</h2>
+            <h2 class="animTarget">
+              본인의 이름마저도 잊어버렸습니다.
+            </h2>
+          </div>
+        </div>
+      </section>
+      <section id="s5" class="animTrigger">
+        <div class="wrapper">
+          <div class="content">
+            <h2 class="animTarget">
+              다음 날, 의사는 남자에게 말했습니다.
+            </h2>
+            <p class="animTarget">
+              "누군가 우리를 내려본다면, 세상은
+              바쁘게 뛰어다니는 사람들로, 그리고
+              그들을 놓친 영혼들로 가득 차 보일
+              거예요. 영혼은 주인의 속도를 따라갈
+              수 없으니까요."
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="s6" class="animTrigger">
+        <div class="wrapper">
+          <div class="content">
+            <h2 class="animTarget">
+              "제가 제 영혼을 잃어버렸다는
+              말씀입니까?"
+            </h2>
+            <p class="animTarget">
+              Chapter2에서 계속됩니다..
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script>
+      hamburger =
+        document.querySelector(".hamburger");
+      hamburger.onclick = function () {
+        navBar =
+          document.querySelector(".nav-bar");
+        navBar.classList.toggle("active");
+      };
+    </script>
+  </body>
+</html>

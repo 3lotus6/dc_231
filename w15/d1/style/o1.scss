@@ -1,0 +1,320 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: "EF_hyunydororong";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-01@1.0/EF_hyunydororong.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "UhBeepuding";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_five@.2.0/UhBeepuding.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  background-color: #e7e0bd;
+  background-image: url(img/town.png);
+
+  background-size: cover;
+  background-position: center;
+  width: 100vw;
+  height: 100dvh;
+  overflow: hidden;
+}
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #2d1818;
+  font-family: "UhBeepuding";
+}
+header {
+  width: 100%;
+  height: 60px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 100px;
+}
+
+.hamburger {
+  display: none;
+}
+
+.nav-bar ul {
+  display: flex;
+}
+.navbar .logo a {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.nav-bar ul li a {
+  display: block;
+  color: #371919;
+  font-size: 14px;
+  padding: 10px 25px;
+  font-family: "EF_hyunydororong";
+  transition: 0.2s;
+  margin: 0 5px;
+}
+.nav-bar ul li a:hover {
+  color: rgb(188, 188, 188);
+}
+html {
+  color-scheme: light dark;
+}
+
+body {
+  width: 100vw;
+  height: 100dvh;
+  overflow: hidden;
+  margin: 0;
+  font-family: system-ui, -apple-system,
+    BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans",
+    "Helvetica Neue", sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.5;
+}
+
+main {
+  width: 100%;
+  height: 100dvh;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
+
+section {
+  scroll-snap-align: center;
+  overflow: hidden;
+}
+
+.wrapper {
+  width: min(50ch, 100% - 4rem);
+  min-height: max(15rem, 70dvh);
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+img,
+svg,
+video {
+  max-width: 100%;
+  display: block;
+}
+
+#s1 {
+  .animTarget {
+    transform: scale(0);
+    transition: transform 500ms ease-in-out;
+  }
+  &.triggered {
+    .animTarget {
+      transform: scale(1);
+    }
+  }
+  font-family: "UhBeepuding";
+  font-size: 30pt;
+  text-align: center;
+  color: #fcffc6;
+
+  background-image: url(img/ww.jpg);
+}
+
+#s2 {
+  .animTarget {
+    transform: scale(0);
+    transition: transform 500ms ease-in-out;
+  }
+  &.triggered {
+    .animTarget {
+      transform: scale(1);
+    }
+  }
+  color: #371919;
+  font-family: "UhBeepuding";
+  font-size: 30pt;
+  text-align: center;
+  background-image: url(img/ssg.png);
+  background-size: cover;
+  background-position: bottom;
+}
+
+#s3 {
+  .animTarget {
+    transform: scale(0);
+    transition: transform 500ms ease-in-out;
+  }
+  &.triggered {
+    .animTarget {
+      transform: scale(1);
+    }
+  }
+  font-family: "UhBeepuding";
+  font-size: 22pt;
+  text-align: center;
+  justify-content: center;
+  color: #f3f3df;
+  background-color: #1a1813;
+}
+
+#s4 {
+  .animTarget {
+  }
+  .animTarget:nth-child(1) {
+    transform: translateY(-100vw);
+    transition: transform 500ms ease-in-out;
+  }
+  .animTarget:nth-child(2) {
+    transform: translateY(100vw);
+    transition: transform 500ms ease-in-out;
+  }
+  &.triggered {
+    .animTarget {
+      transform: translateY(0);
+    }
+  }
+  font-family: "UhBeepuding";
+  font-size: 25pt;
+
+  text-align: center;
+  justify-content: center;
+  color: #1a1813;
+  background-image: url(img/ds.png);
+  background-size: cover;
+  background-position: center;
+}
+
+#s5 {
+  .animTarget {
+    opacity: 0;
+    transition: transform 750ms ease-out,
+      opacity 1000ms;
+  }
+  .animTarget:nth-child(1) {
+    transform: translateY(-50px);
+  }
+  .animTarget:nth-child(2) {
+    transform: translateY(50px);
+  }
+  &.triggered {
+    .animTarget {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  font-family: "UhBeepuding";
+  font-size: 22pt;
+  text-align: center;
+  justify-content: center;
+  color: #1a1813;
+  background-image: url(img/cc.png);
+}
+
+#s6 {
+  &.triggered {
+    .animTarget:nth-child(1) {
+      animation: wiggle 2s linear infinite;
+    }
+    .animTarget:nth-child(2) {
+      animation: wiggle 2s linear infinite reverse;
+    }
+  }
+  font-family: "UhBeepuding";
+  font-size: 22pt;
+  text-align: center;
+  justify-content: center;
+
+  color: #1a1813;
+}
+
+/* Keyframes */
+@keyframes wiggle {
+  0%,
+  7% {
+    transform: rotateZ(0);
+  }
+  15% {
+    transform: rotateZ(-15deg);
+  }
+  20% {
+    transform: rotateZ(10deg);
+  }
+  25% {
+    transform: rotateZ(-10deg);
+  }
+  30% {
+    transform: rotateZ(6deg);
+  }
+  35% {
+    transform: rotateZ(-4deg);
+  }
+  40%,
+  100% {
+    transform: rotateZ(0);
+  }
+}
+
+@media only screen and (max-width: 1320px) {
+  header {
+    padding: 0 50px;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  header {
+    padding: 0 30px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+  .hamburger .line {
+    width: 20px;
+    height: 2px;
+    background: #180808;
+    margin: 5px 0;
+  }
+  .nav-bar {
+    height: 0;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    background: #231c0b5e;
+  }
+  .nav-bar.active {
+    height: 125px;
+  }
+  .nav-bar ul {
+    display: block;
+    width: fit-content;
+    margin: 20px auto 0 auto;
+    text-align: center;
+
+    opacity: 0;
+  }
+  .nav-bar.active ul {
+    opacity: 1;
+  }
+  .nav-bar ul li a {
+    margin-bottom: 12px;
+  }
+}
