@@ -116,7 +116,7 @@ video {
 
 #s1 {
   font-family: "UhBeepuding";
-  font-size: 30pt;
+  font-size: 25pt;
   text-align: center;
   color: #fcffc6;
   background-image: url(img/ww.jpg);
@@ -132,7 +132,7 @@ video {
 #s2 {
   color: #371919;
   font-family: "UhBeepuding";
-  font-size: 30pt;
+  font-size: 25pt;
   text-align: center;
   background-image: url(img/ssg.png);
   background-size: cover;
@@ -148,7 +148,7 @@ video {
 
 #s3 {
   font-family: "UhBeepuding";
-  font-size: 22pt;
+  font-size: 20pt;
   text-align: center;
   justify-content: center;
   color: #f3f3df;
@@ -164,7 +164,7 @@ video {
 
 #s4 {
   font-family: "UhBeepuding";
-  font-size: 25pt;
+  font-size: 18pt;
   text-align: center;
   justify-content: center;
   color: #1a1813;
@@ -186,7 +186,7 @@ video {
 
 #s5 {
   font-family: "UhBeepuding";
-  font-size: 22pt;
+  font-size: 20pt;
   text-align: center;
   justify-content: center;
   color: #1a1813;
@@ -209,7 +209,7 @@ video {
 
 #s6 {
   font-family: "UhBeepuding";
-  font-size: 22pt;
+  font-size: 18pt;
   text-align: center;
   justify-content: center;
   color: #1a1813;
